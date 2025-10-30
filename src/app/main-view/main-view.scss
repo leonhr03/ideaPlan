@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+app-side-bar {
+  flex: 0 0 20vw;
+  border-right: 1px solid #333;
+}
+
+app-detail-view {
+  width: 80vw;
+  padding: 20px;
+  background-color: #f0f0f0;
+}

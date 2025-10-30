@@ -1,18 +1,10 @@
-<html>
-  <body>
-    <div class="container">
-      <h1 class="heading">Ideas</h1>
-      <div class="list">
-        <div class="listItem">
-         <p class="listTitle">Idee</p>
-        </div>
-        <div class="listItem">
-          <p class="listTitle">Idee</p>
-        </div>
-      </div>
-      <Button>+</Button>
-   </div>
-  </body>
-</html>
+<div class="container">
+  <h1 class="heading">Ideas</h1>
 
+  <div class="list">
+    <app-list-view *ngFor="let item of ideas" [title]="item.title" (click)="onPress(item.title)"></app-list-view>
+  </div>
 
+  <button routerLink="add" class="addButton">+</button>
+
+</div>

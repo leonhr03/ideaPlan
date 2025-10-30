@@ -1,0 +1,14 @@
+<div class="container" *ngIf="title || description || (tasks && tasks.length)">
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+
+  <h1>Tasks</h1>
+
+  <div class="list">
+    <app-task-item
+      *ngFor="let item of tasks"
+      [task]="item.task">
+    </app-task-item>
+    <button routerLink="/addTask">+</button>
+  </div>
+</div>

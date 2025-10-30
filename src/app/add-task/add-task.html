@@ -3,11 +3,10 @@
 
   <input
     type="text"
-    [(ngModel)]="title"
+    [(ngModel)]="task"
     placeholder="title"
   >
 
-  <textarea placeholder="description" [(ngModel)]="description"></textarea>
   <button (click)="add()" class="addButton">Add</button>
   <button class="backButton" routerLink="/">←</button>
 </div>
